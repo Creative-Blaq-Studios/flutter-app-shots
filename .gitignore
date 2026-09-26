@@ -1,0 +1,19 @@
+.DS_Store
+.dart_tool/
+
+# Local credentials and signing material.
+**/.env
+**/.env.*
+!**/.env.example
+**/*.pem
+**/*.p12
+**/*.jks
+**/*.keystore
+**/*.mobileprovision
+**/google-services.json
+**/GoogleService-Info.plist
+
+# Local planning links and generated test artifacts.
+**/.plan-url
+**/.plan-state.json
+**/test/failures/

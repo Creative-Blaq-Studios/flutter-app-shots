@@ -1,0 +1,8 @@
+appId: {{appId}}
+---
+- launchApp
+- {{navigationStep}}
+- waitForAnimationToEnd
+- assertVisible: "{{screenAnchor}}"
+- takeScreenshot:
+    path: {{screenshotName}}

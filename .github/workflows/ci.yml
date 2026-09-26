@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.47.2'
+          channel: stable
+          cache: true
+      - name: Dart CLI
+        working-directory: flutter-app-shots/tool
+        run: |
+          dart pub get
+          dart analyze
+          dart test
+      - name: Flutter renderer
+        working-directory: flutter-app-shots/renderer
+        run: |
+          flutter pub get
+          flutter analyze
+          flutter test --dart-define=APP_SHOTS_MANIFEST=.compose/ci-not-present.json

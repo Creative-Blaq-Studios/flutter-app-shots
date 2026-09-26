@@ -1,0 +1,11 @@
+appId: {{appId}}
+---
+- launchApp:
+    clearState: true
+- tapOn: "{{emailLabel}}"
+- inputText: "${APP_SHOTS_TEST_EMAIL}"
+- tapOn: "{{passwordLabel}}"
+- inputText: "${APP_SHOTS_TEST_PASSWORD}"
+- tapOn: "{{submitLabel}}"
+- waitForAnimationToEnd
+- assertVisible: "{{postLoginAnchor}}"

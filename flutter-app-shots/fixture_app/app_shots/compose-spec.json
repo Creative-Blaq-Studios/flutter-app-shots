@@ -1,0 +1,42 @@
+{
+  "stores": ["app_store", "play_store"],
+  "brandColor": "#6750A4",
+  "tone": "professional",
+  "entries": [
+    {
+      "id": "home",
+      "deviceClass": "iphone_6_9",
+      "raw": "screenshots/golden/home/iphone_6_9.png",
+      "headline": "All your notes, one place",
+      "subheadline": "Fast capture. Zero friction.",      "background": { "kind": "auto" }
+    },
+    {
+      "id": "home",
+      "deviceClass": "ipad_13",
+      "raw": "screenshots/golden/home/ipad_13.png",
+      "headline": "All your notes, one place",
+      "subheadline": "Fast capture. Zero friction.",      "background": { "kind": "css", "style": "gradient" }
+    },
+    {
+      "id": "home",
+      "deviceClass": "android_phone",
+      "raw": "screenshots/golden/home/android_phone.png",
+      "headline": "All your notes, one place",      "background": { "kind": "css", "style": "gradient" }
+    },
+    {
+      "id": "stats",
+      "deviceClass": "iphone_6_9",
+      "raw": "screenshots/golden/stats/iphone_6_9.png",
+      "headline": "See your week at a glance",
+      "layout": "text_banner",
+      "background": { "kind": "css", "style": "soft_shapes" }
+    },
+    {
+      "id": "feature_graphic",
+      "deviceClass": "feature_graphic",
+      "headline": "Fixture Notes",
+      "background": { "kind": "css", "style": "brand_block" },
+      "deviceless": true
+    }
+  ]
+}

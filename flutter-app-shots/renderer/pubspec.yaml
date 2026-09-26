@@ -1,0 +1,22 @@
+name: app_shots_renderer
+description: "Flutter render harness for Flutter App Shots: CSS-faithful backgrounds, device frames, and store-image composition."
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: ^3.5.0
+  flutter: ">=3.27.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  app_shots:
+    path: ../tool
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  image: ^4.2.0
+  flutter_lints: ^4.0.0
+
+flutter:

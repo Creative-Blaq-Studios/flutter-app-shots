@@ -1,0 +1,19 @@
+{
+  "stores": ["app_store", "play_store"],
+  "shots": [
+    {
+      "id": "home",
+      "description": "Curated notes list",
+      "requiredState": { "auth": false, "seeded": true },
+      "selectors": [],
+      "formFactors": ["iphone", "ipad", "androidPhone"]
+    },
+    {
+      "id": "stats",
+      "description": "Weekly stats with gradient header",
+      "requiredState": { "auth": false, "seeded": true },
+      "selectors": [],
+      "formFactors": ["iphone"]
+    }
+  ]
+}
